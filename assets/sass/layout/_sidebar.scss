@@ -4,6 +4,10 @@
     border-right: solid #fff 3px;
     height: 100%;
 
+    nav a.active {
+        color: $main-color;
+    }
+
     ul {
         display: flex;
         flex-direction: column;
@@ -23,5 +27,10 @@
 
     i {
         margin: 1rem;
+    }
+
+    li:hover i {
+        transform: scale(0.2) rotate(360deg);
+        transition: transform 2s ease; /* 1s pour une durée d'une seconde, ajustez selon vos besoins */
     }
 }

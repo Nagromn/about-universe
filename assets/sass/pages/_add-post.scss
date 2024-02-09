@@ -1,0 +1,40 @@
+.add-post {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    article {
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 300px;
+            padding: 2rem;
+
+            label,
+            input,
+            textarea {
+                margin: 0.3rem 0;
+            }
+
+            input,
+            textarea {
+                color: #fff;
+                background-color: #000000;
+                border: 2px solid #fff;
+                padding: 0.5rem;
+            }
+
+            button {
+                font-weight: 700;
+                text-transform: uppercase;
+                padding: 0.5rem 1rem;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}

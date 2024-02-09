@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 html,
 body,
@@ -169,6 +170,9 @@ a {
 .header img {
   width: 15rem;
 }
+.header nav a.active {
+  color: #5d94b5;
+}
 .header ul {
   display: flex;
 }
@@ -188,6 +192,9 @@ a {
   border-right: solid #fff 3px;
   height: 100%;
 }
+.sidebar nav a.active {
+  color: #5d94b5;
+}
 .sidebar ul {
   display: flex;
   flex-direction: column;
@@ -204,6 +211,10 @@ a {
 }
 .sidebar i {
   margin: 1rem;
+}
+.sidebar li:hover i {
+  transform: scale(0.2) rotate(360deg);
+  transition: transform 2s ease; /* 1s pour une durée d'une seconde, ajustez selon vos besoins */
 }
 
 .footer {
@@ -343,8 +354,7 @@ a {
   width: 50%;
 }
 .planets article .search {
-  display: flex;
-  margin-top: 1rem;
+  margin: 1rem 0rem;
 }
 .planets article .search form {
   display: flex;
@@ -360,6 +370,7 @@ a {
   padding: 0.5rem;
 }
 .planets article .search button {
+  display: none;
   border: none;
   border-radius: 3px;
   background-color: #dc3545;
@@ -422,6 +433,42 @@ a {
 .planets article p > span {
   color: #5d94b5;
   font-style: italic;
+}
+
+.add-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.add-post article {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+}
+.add-post article form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  padding: 2rem;
+}
+.add-post article form label,
+.add-post article form input,
+.add-post article form textarea {
+  margin: 0.3rem 0;
+}
+.add-post article form input,
+.add-post article form textarea {
+  color: #fff;
+  background-color: #000000;
+  border: 2px solid #fff;
+  padding: 0.5rem;
+}
+.add-post article form button {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

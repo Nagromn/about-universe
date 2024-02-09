@@ -12,6 +12,10 @@
         width: 15rem;
     }
 
+    nav a.active {
+        color: $main-color;
+    }
+
     ul {
         display: flex;
     }

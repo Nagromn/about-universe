@@ -66,8 +66,7 @@
         }
 
         .search {
-            display: flex;
-            margin-top: 1rem;
+            margin: 1rem 0rem;
 
             form {
                 display: flex;
@@ -85,6 +84,7 @@
             }
 
             button {
+                display: none;
                 border: none;
                 border-radius: 3px;
                 background-color: $error-color;

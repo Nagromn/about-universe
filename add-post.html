@@ -28,7 +28,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="planets.html" class="active">
+                        <a href="planets.html">
                             <i class="fa-solid fa-globe fa-2xl"></i>
                             Planètes
                         </a>
@@ -48,52 +48,32 @@
                 </ul>
             </nav>
         </div>
-        <main class="main planets">
+        <main class="main add-post">
             <article>
-                <h2>Planètes</h2>
-                <div id="select-container">
-                    <select name="select" id="select"></select>
-                </div>
-                <div class="search">
-                    <form action="#">
-                        <input id="search" type="text" placeholder="Search.." />
-                        <button id="clear">
-                            <i class="fa-solid fa-x"></i>
-                        </button>
-                    </form>
-                </div>
-                <div id="table-container">
-                    <table id="planet-table">
-                        <thead>
-                            <tr>
-                                <th>Nom</th>
-                                <th>Terrain</th>
-                            </tr>
-                        </thead>
-                        <tbody id="planet-table-body"></tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="2" id="resultCount"></td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-            </article>
-            <article>
-                <h2>Détails</h2>
-                <div id="details">
-                    <p><span>Sélectionner le contenu à afficher !</span></p>
-                </div>
+                <h2>Ajouter un article</h2>
+                <form action="">
+                    <label for="title">Titre :</label>
+                    <input type="text" id="title" name="title" />
+
+                    <label for="content">Description :</label>
+                    <textarea id="content" name="content" rows="6"></textarea>
+
+                    <label for="slug">Slug :</label>
+                    <input type="text" id="slug" name="slug" />
+
+                    <label for="picture">Image :</label>
+                    <input type="text" id="picture" name="picture" />
+
+                    <input type="hidden" id="user" name="user" value="1" />
+
+                    <button type="submit">Ajouter l'article</button>
+                </form>
             </article>
         </main>
+        <script src="assets/js/navigation.js"></script>
+        <script src="assets/js/post.js"></script>
         <footer class="footer">
             <p>&copy; 2024 - Cloud Campus</p>
         </footer>
-        <script src="assets/js/api.js"></script>
-        <script src="assets/js/display.js"></script>
-        <script src="assets/js/options.js"></script>
-        <script src="assets/js/searchbar.js"></script>
-        <script src="assets/js/navigation.js"></script>
-        <script src="assets/js/index.js"></script>
     </body>
 </html>

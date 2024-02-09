@@ -12,6 +12,7 @@ function searchBar() {
             return planet.name.toLowerCase().includes(searchTerm);
         });
         displayPlanets(filteredPlanets);
+        updateResultCount(filteredPlanets.length);
 
         // Si texte dans la barre de recherche, on affiche le <button>
         if (searchTerm.length > 0) {
