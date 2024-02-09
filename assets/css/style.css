@@ -343,10 +343,15 @@ a {
   width: 50%;
 }
 .planets article .search {
-  position: relative;
   display: flex;
-  justify-content: space-between;
   margin-top: 1rem;
+}
+.planets article .search form {
+  display: flex;
+  align-items: center;
+}
+.planets article .search form #search {
+  color: #fff;
 }
 .planets article .search input {
   border: 2px solid #fff;
@@ -356,14 +361,15 @@ a {
 }
 .planets article .search button {
   border: none;
-  background-color: inherit;
-  position: absolute;
-  right: 0.3rem;
-  top: 25%;
+  border-radius: 3px;
+  background-color: #dc3545;
+  margin-left: 1rem;
+  padding: 0.3rem 0.5rem;
 }
 .planets article .search i {
   color: #fff;
   margin: 0;
+  width: fit-content;
 }
 .planets article table {
   margin: 1rem 0;

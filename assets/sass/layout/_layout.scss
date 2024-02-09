@@ -1,39 +1,39 @@
 // Base
 
 body {
-  font-family: $font-roboto;
-  background-color: #000000;
-  font-size: 0.8rem;
-  color: #fff;
+    font-family: $font-roboto;
+    background-color: #000000;
+    font-size: 0.8rem;
+    color: #fff;
 }
 
 a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
 }
 
 // Grid template
 .container {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 0.1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.01fr 1fr 0.05fr;
-  grid-template-areas:
-    "header header header header"
-    "sidebar main main main"
-    "footer footer footer footer";
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.01fr 1fr 0.05fr;
+    grid-template-areas:
+        "header header header header"
+        "sidebar main main main"
+        "footer footer footer footer";
 }
 
 .header {
-  grid-area: header;
+    grid-area: header;
 }
 .main {
-  grid-area: main;
+    grid-area: main;
 }
 .sidebar {
-  grid-area: sidebar;
+    grid-area: sidebar;
 }
 .footer {
-  grid-area: footer;
+    grid-area: footer;
 }

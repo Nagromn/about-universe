@@ -82,46 +82,46 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 // Réinitialisation des styles de liste
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 // Remise à zéro des éléments de la typographie
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
+    content: "";
+    content: none;
 }
 
 // Réinitialisation des éléments intégrés (images, vidéos, etc.)
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 // Réinitialisation des éléments de formulaire
 input,
 select,
 textarea {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: middle;
-  font: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: middle;
+    font: inherit;
 }

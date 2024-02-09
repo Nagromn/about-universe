@@ -1,27 +1,27 @@
 .sidebar {
-  display: flex;
-  justify-content: center;
-  border-right: solid #fff 3px;
-  height: 100%;
-
-  ul {
     display: flex;
-    flex-direction: column;
-  }
+    justify-content: center;
+    border-right: solid #fff 3px;
+    height: 100%;
 
-  ul > li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
-  }
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
 
-  li:hover i,
-  li:hover a {
-    color: $main-color;
-  }
+    ul > li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+    }
 
-  i {
-    margin: 1rem;
-  }
+    li:hover i,
+    li:hover a {
+        color: $main-color;
+    }
+
+    i {
+        margin: 1rem;
+    }
 }

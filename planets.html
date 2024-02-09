@@ -55,10 +55,12 @@
                     <select name="select" id="select"></select>
                 </div>
                 <div class="search">
-                    <input type="text" placeholder="Search.." />
-                    <button>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                    <form action="#">
+                        <input id="search" type="text" placeholder="Search.." />
+                        <button id="clear">
+                            <i class="fa-solid fa-x"></i>
+                        </button>
+                    </form>
                 </div>
                 <div id="table-container">
                     <table id="planet-table">
@@ -78,6 +80,7 @@
                 </div>
             </article>
             <article>
+                <h2>Détails</h2>
                 <div id="details">
                     <p><span>Sélectionner le contenu à afficher !</span></p>
                 </div>
@@ -86,6 +89,10 @@
         <footer class="footer">
             <p>&copy; 2024 - Cloud Campus</p>
         </footer>
+        <script src="assets/js/api.js"></script>
+        <script src="assets/js/display.js"></script>
+        <script src="assets/js/options.js"></script>
+        <script src="assets/js/searchbar.js"></script>
         <script src="assets/js/index.js"></script>
     </body>
 </html>
