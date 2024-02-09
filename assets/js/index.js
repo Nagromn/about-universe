@@ -1,6 +1,6 @@
+let baseUrl = "https://swapi.dev/api/";
+
 // Charge les éléments du DOM
-document.addEventListener("DOMContentLoaded", function () {
-    loadAllPages();
-    createOptions();
-    searchBar();
-});
+loadAllPages();
+createOptions();
+searchBar();

@@ -1,4 +1,3 @@
-let baseUrl = "https://swapi.dev/api/";
 let allPlanets = [];
 
 // Charge toutes les pages avec les planètes de l'api
