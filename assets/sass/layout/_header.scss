@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  border-top: solid #fff 3px;
+  border-bottom: solid #fff 3px;
+
+  h1 {
+    margin-left: 1rem;
+  }
+
+  img {
+    width: 15rem;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  ul > li {
+    margin: 0 1rem 0 1rem;
+  }
+
+  a {
+    font-weight: 700;
+  }
+
+  a:hover {
+    color: $main-color;
+  }
+}

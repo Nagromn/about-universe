@@ -1,0 +1,80 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  margin-bottom: 0;
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid #fff 3px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    h2 {
+      color: $main-color;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    a > span {
+      color: $main-color;
+      font-weight: 700;
+    }
+
+    a:not(:first-child):last-child {
+      background-color: #000000;
+      border: solid #fff 3px;
+      padding: 0.5rem;
+      width: fit-content;
+    }
+
+    a:not(:first-child):last-child:hover {
+      color: $main-color;
+      border-color: $main-color;
+    }
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 3rem;
+    }
+
+    i {
+      color: $main-color;
+      line-height: normal;
+      margin: 0 0.5rem;
+    }
+
+    div > p {
+      color: $main-color;
+      font-weight: 700;
+    }
+
+    div > span {
+      font-style: italic;
+    }
+  }
+
+  .bg-universe {
+    background-image: url("../img/universe.jpg");
+    background-size: cover;
+    height: 100px;
+  }
+
+  .bg-stats {
+    background-image: url("../img/planet.jpg");
+    background-size: cover;
+    height: 300px;
+
+    a:last-child {
+      align-self: end;
+    }
+  }
+}

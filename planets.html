@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Space X</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+    </head>
+    <body class="container">
+        <header class="header">
+            <h1>
+                <a href="home.html"
+                    ><img src="assets/img/spacex.png" alt="Logo Space X"
+                /></a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Accueil</a></li>
+                    <li><a href="">Prochaine mission</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="planets.html">
+                            <i class="fa-solid fa-globe fa-2xl"></i>
+                            Planètes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-rocket fa-2xl"></i>
+                            Véhicules
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-reddit-alien fa-2xl"></i>
+                            Personnes
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <main class="main planets">
+            <article>
+                <h2>Planètes</h2>
+                <div id="select-container">
+                    <select name="select" id="select"></select>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search.." />
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div id="table-container">
+                    <table id="planet-table">
+                        <thead>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Terrain</th>
+                            </tr>
+                        </thead>
+                        <tbody id="planet-table-body"></tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" id="resultCount"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </article>
+            <article>
+                <div id="details">
+                    <p><span>Sélectionner le contenu à afficher !</span></p>
+                </div>
+            </article>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2024 - Cloud Campus</p>
+        </footer>
+        <script src="assets/js/index.js"></script>
+    </body>
+</html>
